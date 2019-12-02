@@ -18,6 +18,11 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 0.03f);
     }
 
+    //子彈飛出攝影機時刪除物件
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject, 0.03f);
+    }
     /// <summary>
     /// 讓子彈飛
     /// </summary>
